@@ -1,0 +1,76 @@
+{
+    "low": {
+        "room_1": {
+            "capacity_air": 1641233.0,
+            "capacity_internal": 5531358.0,
+            "resistance_inside": 0.001153,
+            "resistance_window": 0.070764,
+            "coefficient_solar": 1.0964
+        },
+        "room_2": {
+            "capacity_air": 1781206.0,
+            "capacity_internal": 6003102.0,
+            "resistance_inside": 0.001252,
+            "resistance_window": 0.0768,
+            "coefficient_solar": 1.1899
+        },
+        "room_3": {
+            "capacity_air": 1658882.0,
+            "capacity_internal": 5590838.0,
+            "resistance_inside": 0.001166,
+            "resistance_window": 0.071525,
+            "coefficient_solar": 1.1082
+        },
+        "room_4": {
+            "capacity_air": 1658555.0,
+            "capacity_internal": 5589738.0,
+            "resistance_inside": 0.001165,
+            "resistance_window": 0.071511,
+            "coefficient_solar": 1.108
+        },
+        "room_5": {
+            "capacity_air": 1724457.0,
+            "capacity_internal": 5811841.0,
+            "resistance_inside": 0.001212,
+            "resistance_window": 0.074353,
+            "coefficient_solar": 1.152
+        }
+    },
+    "high": {
+        "room_1": {
+            "capacity_air": 3282466,
+            "capacity_internal": 11062716,
+            "resistance_inside": 0.001153,
+            "resistance_window": 0.070764,
+            "coefficient_solar": 1.0964
+        },
+        "room_2": {
+            "capacity_air": 3562412,
+            "capacity_internal": 12006204,
+            "resistance_inside": 0.001252,
+            "resistance_window": 0.0768,
+            "coefficient_solar": 1.1899
+        },
+        "room_3": {
+            "capacity_air": 3317764,
+            "capacity_internal": 11181676,
+            "resistance_inside": 0.001166,
+            "resistance_window": 0.071525,
+            "coefficient_solar": 1.1082
+        },
+        "room_4": {
+            "capacity_air": 3317110,
+            "capacity_internal": 11179476,
+            "resistance_inside": 0.001165,
+            "resistance_window": 0.071511,
+            "coefficient_solar": 1.108
+        },
+        "room_5": {
+            "capacity_air": 3448914,
+            "capacity_internal": 11623682,
+            "resistance_inside": 0.001212,
+            "resistance_window": 0.074353,
+            "coefficient_solar": 1.152
+        }
+    }
+}

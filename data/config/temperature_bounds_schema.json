@@ -1,0 +1,216 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Temperature scenario config",
+    "description": "This document records the details of a temperature scenario config",
+    "$ref": "#/$defs/schema",
+    "$defs": {
+        "schema": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "base": {
+                    "$ref": "#/$defs/zones"
+                },
+                "adaptive": {
+                    "$ref": "#/$defs/zones"
+                }
+            },
+            "required": [
+                "adaptive",
+                "base"
+            ]
+        },
+        "zones": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "room_1": {
+                    "$ref": "#/$defs/bounds"
+                },
+                "room_2": {
+                    "$ref": "#/$defs/bounds"
+                },
+                "room_3": {
+                    "$ref": "#/$defs/bounds"
+                },
+                "room_4": {
+                    "$ref": "#/$defs/bounds"
+                },
+                "room_5": {
+                    "$ref": "#/$defs/bounds"
+                }
+            },
+            "required": [
+                "room_1",
+                "room_2",
+                "room_3",
+                "room_4",
+                "room_5"
+            ]
+        },
+        "bounds": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "hourly_minimum_temperatures": {
+                    "type": "array",
+                    "prefixItems": [
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                },
+                "hourly_maximum_temperatures": {
+                    "type": "array",
+                    "prefixItems": [
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
+            },
+            "required": [
+                "hourly_maximum_temperatures",
+                "hourly_minimum_temperatures"
+            ]
+        }
+    }
+}

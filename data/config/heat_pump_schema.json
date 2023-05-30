@@ -1,0 +1,41 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Heat pump config",
+    "description": "This document records the details of a heat pump config.",
+    "$ref": "#/$defs/schema",
+    "$defs": {
+        "schema": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "outside_air_temperature": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    }
+                },
+                "electrical_power_consumption_max": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    }
+                },
+                "coefficient_of_performance_nenn": {
+                    "type": "array",
+                    "items": {
+                        "type": "number"
+                    }
+                }
+            },
+            "required": [
+                "coefficient_of_performance_nenn",
+                "electrical_power_consumption_max",
+                "name",
+                "outside_air_temperature"
+            ]
+        }
+    }
+}

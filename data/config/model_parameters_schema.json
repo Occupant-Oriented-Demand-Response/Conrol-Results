@@ -1,0 +1,80 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Building parameters config",
+    "description": "This document records the details of a building parameters config.",
+    "$ref": "#/$defs/schema",
+    "$defs": {
+        "schema": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "low": {
+                    "$ref": "#/$defs/zones"
+                },
+                "high": {
+                    "$ref": "#/$defs/zones"
+                }
+            },
+            "required": [
+                "high",
+                "low"
+            ]
+        },
+        "zones": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "room_1": {
+                    "$ref": "#/$defs/params"
+                },
+                "room_2": {
+                    "$ref": "#/$defs/params"
+                },
+                "room_3": {
+                    "$ref": "#/$defs/params"
+                },
+                "room_4": {
+                    "$ref": "#/$defs/params"
+                },
+                "room_5": {
+                    "$ref": "#/$defs/params"
+                }
+            },
+            "required": [
+                "room_1",
+                "room_2",
+                "room_3",
+                "room_4",
+                "room_5"
+            ]
+        },
+        "params": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "capacity_air": {
+                    "type": "number"
+                },
+                "capacity_internal": {
+                    "type": "number"
+                },
+                "resistance_inside": {
+                    "type": "number"
+                },
+                "resistance_window": {
+                    "type": "number"
+                },
+                "coefficient_solar": {
+                    "type": "number"
+                }
+            },
+            "required": [
+                "capacity_air",
+                "capacity_internal",
+                "coefficient_solar",
+                "resistance_inside",
+                "resistance_window"
+            ]
+        }
+    }
+}

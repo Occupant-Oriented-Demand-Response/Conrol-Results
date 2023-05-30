@@ -1,0 +1,33 @@
+{
+    "name": "AERO SLM 3-11 HGL",
+    "outside_air_temperature": [
+        -10,
+        -7,
+        2,
+        7,
+        10,
+        12,
+        15,
+        20
+    ],
+    "electrical_power_consumption_max": [
+        4200,
+        4390,
+        4830,
+        4620,
+        4400,
+        4410,
+        4000,
+        3320
+    ],
+    "coefficient_of_performance_nenn": [
+        1.98,
+        2.2,
+        2.71,
+        3.1,
+        3.34,
+        3.55,
+        3.89,
+        4.26
+    ]
+}

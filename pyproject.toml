@@ -1,0 +1,91 @@
+[tool.poetry]
+name = "paper-revision"
+version = "0.0.1"
+description = "Python code for paper revision."
+authors = [
+    "Thomas Dengiz <thomas.dengiz@kit.edu>",
+    "Moritz Frahm <moritz.frahm@kit.edu>",
+    "Philipp Zwickel <philipp.zwickel@kit.edu>"
+]
+license = ""
+
+readme = "README.md"
+
+repository = "https://git.scc.kit.edu/occupant-oriented-demand-response/paper-revision"
+
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.11",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering",
+]
+
+[tool.poetry.dependencies]
+python = "~3.11"
+pydantic = "^1.10.7"
+pandera = {extras = ["io"], version = "^0.14.5"}
+scipy = "^1.10.1"
+jsonschema = "^4.17.3"
+do-mpc = "^4.5.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.1"
+pytest-cov = "^4.0.0"
+black = "^23.3.0"
+isort = "^5.12.0"
+pylint = "^2.17.2"
+ipykernel = "^6.22.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "--cov=src --cov-report html"
+testpaths = ["tests"]
+
+[tool.black]
+line-length = 120
+skip-magic-trailing-comma = false
+skip-string-normalization = false
+target-version = ['py311']
+include = '\.pyi?$'
+exclude = 'test_*\.py'
+extend_exclude = '''
+/(
+    # exclude a few common directories in the root of the project
+    | \.eggs
+    | \.git
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+known_third_party = ["pytest"]
+line_length = 120
+
+[tool.pylint]
+extension-pkg-whitelist= [
+    "numpy",
+    "pydantic",
+    "scipy"
+]
+ignore="CVS"
+ignore-patterns="test.*?py,conftest.py"
+
+[tool.pylint.'MESSAGES CONTROL']
+disable = "C0103,C0114,R0903,R0913"
+max-line-length = 120
