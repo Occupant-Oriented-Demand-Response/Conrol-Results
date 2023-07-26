@@ -1,8 +1,8 @@
 from enum import StrEnum, auto
 from typing import Self
 
-from paper_revision.core.modelparameters import ModelParameters, ModelParametersType
-from paper_revision.core.temperaturebounds import TemperatureBounds, TemperatureBoundsType
+from src.core.modelparameters import ModelParameters, ModelParametersType
+from src.core.temperaturebounds import TemperatureBounds, TemperatureBoundsType
 
 
 class Zones(StrEnum):

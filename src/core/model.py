@@ -3,8 +3,8 @@ from typing import Callable
 from casadi import logic_and, logic_or
 from do_mpc.model import Model
 
-from paper_revision.core.modelparameters import ModelParameters
-from paper_revision.core.zones import Zones
+from src.core.modelparameters import ModelParameters
+from src.core.zones import Zones
 
 
 def create_model(model_parameters: Callable[[Zones], ModelParameters]) -> Model:

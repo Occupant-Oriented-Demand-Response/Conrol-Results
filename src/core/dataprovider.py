@@ -5,10 +5,10 @@ import pandera as pa
 from pandera.typing import DataFrame, Series
 from pydantic import FilePath, PositiveInt
 
-from paper_revision.core.externaldata import ExternalDataSchema
-from paper_revision.core.heatpump import HeatPumpModel
-from paper_revision.core.temperaturebounds import TemperatureBounds
-from paper_revision.core.zones import Zones
+from src.core.externaldata import ExternalDataSchema
+from src.core.heatpump import HeatPumpModel
+from src.core.temperaturebounds import TemperatureBounds
+from src.core.zones import Zones
 
 
 class DataSchema(pa.SchemaModel):

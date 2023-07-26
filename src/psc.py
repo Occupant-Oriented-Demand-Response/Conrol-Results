@@ -6,17 +6,17 @@ import numpy as np
 import pandas as pd
 from do_mpc.data import save_results
 
-from paper_revision.core.dataprovider import DataProvider
-from paper_revision.core.externaldata import retrieve_data
-from paper_revision.core.heatpump import HeatPumpModel
-from paper_revision.core.model import create_model
-from paper_revision.core.modelparameters import ModelParametersType
-from paper_revision.core.simulator import create_simulator
-from paper_revision.core.temperaturebounds import TemperatureBoundsType
-from paper_revision.core.zones import ZoneDataProvider, Zones
-from paper_revision.utils.json import JSONConfig
+from src.core.dataprovider import DataProvider
+from src.core.externaldata import retrieve_data
+from src.core.heatpump import HeatPumpModel
+from src.core.model import create_model
+from src.core.modelparameters import ModelParametersType
+from src.core.simulator import create_simulator
+from src.core.temperaturebounds import TemperatureBoundsType
+from src.core.zones import ZoneDataProvider, Zones
+from src.utils.json import JSONConfig
 
-DATA_DIR = Path(__file__).parent.parent.parent / "data"
+DATA_DIR = Path(__file__).parent.parent / "data"
 
 
 def main() -> None:
@@ -66,7 +66,7 @@ def main() -> None:
     if onlyUsePriceFactor == True:
         additional_name = additional_name + "_OnlyPF"
 
-    pathForTheRun = "C:/Users/wi9632/Desktop/Ergebnisse/Paper Applied Energy/PSC/" + currentDatetimeString + "_" + additional_name
+    pathForTheRun = "YOUR PATH" + currentDatetimeString + "_" + additional_name # add your path here
 
     try:
         os.makedirs(pathForTheRun)

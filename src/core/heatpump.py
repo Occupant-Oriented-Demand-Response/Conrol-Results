@@ -1,8 +1,8 @@
 from dataclasses import dataclass, field
 from typing import Callable, Self
 
-from paper_revision.utils.interpolate import InterpolationType, interpolate1D
-from paper_revision.utils.json import JSONConfig
+from src.utils.interpolate import InterpolationType, interpolate1D
+from src.utils.json import JSONConfig
 
 
 @dataclass

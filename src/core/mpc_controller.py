@@ -7,8 +7,8 @@ from do_mpc.model import Model
 from pandera.typing import DataFrame
 from pydantic import PositiveInt
 
-from paper_revision.core.dataprovider import DataSchema
-from paper_revision.core.zones import Zones
+from src.core.dataprovider import DataSchema
+from src.core.zones import Zones
 
 
 def create_mpc_controller(model: Model, data: DataFrame[DataSchema]) -> MPC:

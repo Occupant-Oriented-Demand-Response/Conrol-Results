@@ -1,41 +1,19 @@
-# Paper Revision
+# Final publication of 
 
----
+Occupant-oriented demand response with multi-zone thermal building control
 
-## Poetry
+link: https://www.sciencedirect.com/science/article/pii/S0306261923008188?via%3Dihub
 
-This Python package uses poetry as requirement management tool. More information about poetry can be found here: https://python-poetry.org/
+## Install
 
-### 1.Install Poetry
+Install the following packages (e.g. by using pip install).
 
-To install poetry run: 
+- Python==3.11.4
+- do-mpc==4.5.1
+- pandas==2.0.3
+- scipy==1.11.1
+- pandera==0.16.1
+- jsonschema==4.18.4
+- statsmodel==0.14.0
 
-```
-pip install poetry
-
-```
-or use one of the methods described here: https://python-poetry.org/docs/#installation
-
-### 2. Optionally: Customize poetry config
-
-Change the poetry config to generate the virtual environment in the project root folder
-
-```
-poetry config virtualenvs.in-project true
-```
-
-### 3. Install dependencies
-
-Install all dependencies by running
-
-```
-poetry install
-```
-
-### 4. Add new dependencies
-
-To add new dependencies (for example "numpy") run
-
-```
-poetry add numpy
-```
+The mentioned versions were successfully tested by us. 

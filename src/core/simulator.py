@@ -6,7 +6,7 @@ from do_mpc.simulator import Simulator
 from pandera.typing import DataFrame
 from pydantic import PositiveInt
 
-from paper_revision.core.dataprovider import DataSchema
+from src.core.dataprovider import DataSchema
 
 
 def create_simulator(model: Model, data: DataFrame[DataSchema]) -> Simulator:
