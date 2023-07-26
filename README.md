@@ -1,6 +1,6 @@
-# Final publication of 
+# Occupant-oriented demand response with multi-zone thermal building control
 
-Occupant-oriented demand response with multi-zone thermal building control
+## Final publication
 
 link: https://www.sciencedirect.com/science/article/pii/S0306261923008188?via%3Dihub
 
